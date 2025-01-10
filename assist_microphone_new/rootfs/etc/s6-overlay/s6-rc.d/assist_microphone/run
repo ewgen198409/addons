@@ -17,7 +17,7 @@ exec python3 -m wyoming_satellite \
     --name 'assist microphone' \
     --uri 'tcp://0.0.0.0:10700' \
     --mic-command 'arecord -r 22000 -c 1 -f S16_LE -t raw' \
-    --snd-command-rate 16000 \
+    --snd-command-rate 22000 \
     --awake-wav "$(bashio::config 'awake_wav')" \
     --done-wav "$(bashio::config 'done_wav')" \
     --mic-volume-multiplier "$(bashio::config 'mic_volume_multiplier')" \
