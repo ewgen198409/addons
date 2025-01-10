@@ -17,9 +17,9 @@ options:
   awake_wav: "/usr/src/sounds/awake.wav"
   done_wav: "/usr/src/sounds/done.wav"
   sound_enabled: true
-  noise_suppression: 0
-  auto_gain: 0
-  mic_volume_multiplier: 1.0
+  noise_suppression: 3
+  auto_gain: 20
+  mic_volume_multiplier: 2.0
   sound_volume_multiplier: 1.0
   debug_logging: false
 schema:

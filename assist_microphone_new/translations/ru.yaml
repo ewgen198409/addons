@@ -1,0 +1,37 @@
+---
+configuration:
+  awake_wav:
+    name: Awake WAV
+    description: >-
+      Путь к WAV-файлу, который будет воспроизводиться при обнаружении слова пробуждения (пусто, чтобы отключить).
+  done_wav:
+    name: Done WAV
+    description: >-
+      Путь к WAV-файлу, который будет воспроизводиться после завершения голосовой команды (пустой до
+      запрещать).
+  noise_suppression:
+    name: Noise suppression
+    description: >-
+      Уровень шумоподавления (0 — отключено, 4 — максимально).
+  auto_gain:
+    name: Auto gain
+    description: >-
+      Автоматическое увеличение громкости микрофона (0 отключено, 31 — максимум).
+  mic_volume_multiplier:
+    name: Microphone volume multiplier
+    description: >-
+      Умножьте громкость микрофона на фиксированное значение (1,0 = без изменений, 2,0 = в два раза больше).
+      громкий).
+  sound_enabled:
+    name: Sound enabled
+    description: >-
+      Включает или отключает вывод звука.
+  sound_volume_multiplier:
+    name: Sound volume multiplier
+    description: >-
+      Умножьте громкость звука на фиксированное значение (1,0 = без изменений, 2,0 = дважды).
+      такой же громкий). 1.0 является значением по умолчанию.
+  debug_logging:
+    name: Debug logging
+    description: >-
+      Enable debug logging.

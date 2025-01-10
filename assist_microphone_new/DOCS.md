@@ -1,64 +1,43 @@
 # Assist Microphone
 
-Use [Assist](https://www.home-assistant.io/voice_control/) voice assistant with a USB microphone. For example, a USB webcam.
+Используйте голосовой помощник Assist с USB-микрофоном. Например, USB-веб-камерой.
 
-## How to use
+Как использовать
+После установки и запуска этого дополнения оно будет автоматически обнаружено интеграцией Wyoming в Home Assistant. Чтобы завершить настройку, нажмите следующую кнопку:
 
-After this add-on is installed and running, it will be automatically discovered
-by the Wyoming integration in Home Assistant. To finish the setup,
-click the following my button:
+Откройте свой экземпляр Home Assistant и начните настройку новой интеграции.
 
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=wyoming)
+Кроме того, вы можете установить интеграцию с Вайомингом вручную, для получения дополнительной информации см. документацию по интеграции с Вайомингом .
 
-Alternatively, you can install the Wyoming integration manually, see the
-[Wyoming integration documentation](https://www.home-assistant.io/integrations/wyoming/)
-for more information.
+Конфигурация
+Вариант:awake_wav
+Путь к WAV-файлу, который будет воспроизводиться при обнаружении слова-пробуждения (пустое значение для отключения, по умолчанию — /usr/src/sounds/awake.wav).
 
-## Configuration
+Вариант:done_wav
+Путь к WAV-файлу для воспроизведения после завершения голосовой команды (оставьте пустое значение для отключения, по умолчанию — /usr/src/sounds/done.wav).
 
-### Option: `awake_wav`
+Вариант:noise_suppression
+Уровень подавления шума (0 — отключено, 4 — максимально). По умолчанию отключено.
 
-Path to WAV file to play when wake word is detected (empty to disable, default is `/usr/src/sounds/awake.wav`).
+Вариант:auto_gain
+Автоматическое усиление громкости микрофона (0 отключено, 31 dbfs — макс.). По умолчанию отключено.
 
-### Option: `done_wav`
+Вариант:mic_volume_multiplier
+Умножьте громкость микрофона на фиксированное значение (1,0 = без изменений, 2,0 = в два раза громче). Значение по умолчанию — 1,0.
 
-Path to WAV file to play when voice command is finished (empty to disable, default is `/usr/src/sounds/done.wav`).
+Вариант:sound_enabled
+Включает или отключает вывод звука.
 
-### Option: `noise_suppression`
+Вариант:sound_volume_multiplier
+Умножьте громкость выходного звука на фиксированное значение (1,0 = без изменений, 2,0 = в два раза громче). Значение по умолчанию — 1,0.
 
-Noise suppression level (0 is disabled, 4 is max). Disabled by default.
+Вариант:debug_logging
+Включить ведение журнала отладки.
 
-### Option: `auto_gain`
+Поддерживать
+Есть вопросы?
 
-Automatic volume boost for microphone (0 is disabled, 31 dbfs is max). Disabled by default.
-
-### Option: `mic_volume_multiplier`
-
-Multiply microphone volume by fixed value (1.0 = no change, 2.0 = twice as loud). 1.0 is the default.
-
-### Option: `sound_enabled`
-
-Enables or disables output audio.
-
-### Option: `sound_volume_multiplier`
-
-Multiply sound output volume by fixed value (1.0 = no change, 2.0 = twice as loud). 1.0 is the default.
-
-### Option: `debug_logging`
-
-Enable debug logging.
-
-## Support
-
-Got questions?
-
-You have several options to get them answered:
-
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
-In case you've found an bug, please [open an issue on our GitHub][issue].
+У вас есть несколько вариантов получить на них ответ:
 
 [discord]: https://discord.gg/c5DvZ4e
 [forum]: https://community.home-assistant.io
